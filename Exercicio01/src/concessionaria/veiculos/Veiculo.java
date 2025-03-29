@@ -3,7 +3,7 @@ package concessionaria.veiculos;
 import concessionaria.excecoes.DescontoInvalidoException;
 import concessionaria.interfaces.Desconto;
 
-public class Veiculo implements Desconto{
+class Veiculo implements Desconto{
 	
 	private String marca;
 	private String modelo;
