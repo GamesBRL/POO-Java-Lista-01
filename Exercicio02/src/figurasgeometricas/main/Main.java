@@ -1,10 +1,12 @@
 package figurasgeometricas.main;
 
+import figurasgeometricas.excecoes.ConeInvalidoException;
 import figurasgeometricas.excecoes.CuboInvalidoException;
 import figurasgeometricas.excecoes.RaioInvalidoException;
 import figurasgeometricas.excecoes.RetanguloInvalidoException;
 import figurasgeometricas.excecoes.TrianguloInvalidoException;
 import figurasgeometricas.figuras.Circulo;
+import figurasgeometricas.figuras.Cone;
 import figurasgeometricas.figuras.Cubo;
 import figurasgeometricas.figuras.Esfera;
 import figurasgeometricas.figuras.Retangulo;
@@ -28,6 +30,8 @@ public class Main {
 			Triangulo triangulo2 = new Triangulo(5, 10, 5);
 			Triangulo triangulo3 = new Triangulo(9,14,7);
 			//Triangulo triangulo4 = new Triangulo(0, 5, 5);
+			Cone cone1 = new Cone(3,10);
+			//Cone cone2 = new Cone(0,0);
 			
 			//circulo1.exibirDetalhes();
 			//esfera1.exibirDetalhes();
@@ -36,6 +40,7 @@ public class Main {
 			//triangulo1.exibirDetalhes();
 			//triangulo2.exibirDetalhes();
 			//triangulo3.exibirDetalhes();
+			//cone1.exibirDetalhes();
 			
 			
 		} catch (RaioInvalidoException e) {
@@ -48,6 +53,9 @@ public class Main {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} catch (TrianguloInvalidoException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (ConeInvalidoException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
