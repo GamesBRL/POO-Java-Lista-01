@@ -9,7 +9,7 @@ public class Retangulo extends Figura implements FiguraPlana{
 	private double altura;
 	
 	public Retangulo(double base, double altura) throws RetanguloInvalidoException {
-		if(base != altura) {
+		if(base!=altura && base>0 && altura>0) {
 			this.base = base;
 			this.altura = altura;
 		}else {
